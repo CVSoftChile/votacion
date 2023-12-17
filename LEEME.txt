@@ -1,0 +1,47 @@
+FORMULARIO VOTACION
+
+DESARROLLADO EN HTML/JAVASCRIPT/PHP y MySQL
+
+Versión de PHP: 8.2.12
+Versión del servidor de MySQL: 10.4.32-MariaDB
+
+INSTALACION
+
+En un servidor web con soporte para las versiones mencionadas de PHP y MySQL copiar la carpeta Votacion.
+Dentro de la carpeta Votacion/sql está el script para importar la base de datos.
+
+En el archivo conexion.php, ubicado en la carpeta votacion/php se deben configurar los datos para la conexión
+a la base de datos.
+
+En un PC con Windows para utilizar en sitio local:
+
+1.- Si no tiene instalado un software que pueda generar un servidor local (en el PC) que soporte PHP y MySql, se recomienda XAMPP para Windows 8.2.12 ya que la aplicación fue desarrollada bajo este entorno.
+
+XAMPP se puede descargar desde este link https://www.apachefriends.org/es/index.html
+
+2.- Instalar el archivo descargado siguiendo las instrucciones, en caso de ser necesario puede revisar en la web
+videos de como instalar XAMPP.
+
+3.- Una vez instalado XAMPP ejecutar en el PC la aplicación XAMPP Control Panel, en la barra de tareas de Windows
+existe un botón de búsqueda (lupa) donde se puede escribir la palabra xampp y el sistema le mostrará los resultados, seleccionar (hacer clic) en XAMPP Control Panel, se asocia con un icono de color naranja con una letra X de color
+blanco.
+
+4.- Una vez ejecutado XAMPP Control Panel, se deben presionar los botones Start de los módulos Apache y MySQL ubicados
+a la derecha de los textos respectivos. Si todo se ejecutó sin problemas los botones cambiaran a stop y en la barra de tareas, dentro de los iconos ocultos, se incluirá el icono de XAMPP.
+
+5.- Copiar carpeta Votacion dentro del directorio htdocs en xampp (xampp/htdocs/Votacion).
+
+6.-Dentro de la carpeta Votacion/sql está el script de mysql (archivo votacion.sql) para importar la base de datos
+al servidor de MySQL.
+Previo a la importación de se debe crear la base de datos con el nombre votacion y asignar al "usuario" todos los
+permisos necesarios.
+Los datos para configurar la conexión son los siguientes:
+
+        $dbHost = 'localhost';
+        $dbName = 'votacion';
+        $dbUser = 'root';
+        $dbPassword = '';
+        $dbCharset = 'charset=utf8';
+
+7.- Para acceder y ejecutar la aplicación, abra el navegador web y en la barra de navegación escriba lo siguiente:
+http://localhost/votacion y presione el enter.

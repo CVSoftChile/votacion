@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación</title>
+</head>
+<body>
+    <form id="formVotacion" name="formVotacion" method="post" enctype="multipart/form-data">
+        <table>
+            <th colspan="2">
+                <h3>FORMULARIO DE VOTACIÓN</h3>
+            </th>
+            <tr>
+                <td width="200px">
+                    Nombre y Apellido
+                </td>
+                <td>
+                    <input type="text" id="nomApe" name="nomApe" style="width:192px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Alias
+                </td>
+                <td>
+                    <input type="text" id="alias" name="alias" style="width:192px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    RUT  ( Incluir el - )
+                </td>
+                <td>
+                    <input type="text" id="rut" name="rut" style="width:192px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    <input type="text" id="correo" name="correo" style="width:192px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Región
+                </td>
+                <td>
+                    <select id="region" name="region" style="width:200px;">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Comuna
+                </td>
+                <td>
+                    <select id="comuna" name="comuna" style="width:200px;">
+                        <option value="1">ACTIVO</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Candidato
+                </td>
+                <td>
+                    <select id="candidato" name="candidato" style="width:200px;">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cómo se enteró de Nosotros
+                </td>
+                <td>
+                    <input type="checkbox" id="web" name="web"><span>Web</span>
+                    <input type="checkbox" id="tv" name="tv"><span>TV</span>
+                    <input type="checkbox" id="rrss" name="rrss"><span>Redes Sociales</span>
+                    <input type="checkbox" id="amigo" name="amigo"><span>Amigo</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="mensaje" name="mensaje"></span>
+                </td>
+                
+            </tr>
+        </table>
+        <br>
+        <button type="submit" id="votar" name="votar">Votar</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/votacion.js"></script>
+    
+</body>
+</html>
